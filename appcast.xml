@@ -5,6 +5,20 @@
         <link>https://raw.githubusercontent.com/yeyebang/Vela-Updates/main/appcast.xml</link>
         <description>Vela for macOS 更新通道</description>
     <item>
+        <title>Version 0.1.0 (46)</title>
+        <description><![CDATA[体验打磨版：按钮热区与安装防护。
+
+- 修复按钮点击热区问题：添加节点卡片、策略组成员/订阅选择卡、
+  首启向导按钮——现在点卡片任意位置都能生效，不再需要精准点到图标
+- 后台服务正常运行时点「安装数据面」会先弹确认，防止误重装正在工作的服务
+- 安装流程增加自动重试，提升一次性安装成功率]]></description>
+        <pubDate>Wed, 04 Nov 2026 21:07:23 UTC</pubDate>
+        <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+        <sparkle:version>46</sparkle:version>
+        <enclosure url="https://github.com/yeyebang/Vela-Updates/releases/download/v0.1.0-46/Vela-0.1.0-46.dmg" length="43773098" type="application/octet-stream" sparkle:edSignature="52PErvJgg34+8rIudTlyNxmZG0CL7YECB0CFI7HvFgCwxPEcybRoALnLucmWN1mbg6J6n9MJm4uojcHQFd+0Dw=="/>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+    </item>
+    <item>
         <title>Version 0.1.0 (45)</title>
         <description><![CDATA[彻底修复「安装数据面」失败（Bootstrap failed / Input/output error）。
 
