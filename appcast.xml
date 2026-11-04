@@ -5,6 +5,21 @@
         <link>https://raw.githubusercontent.com/yeyebang/Vela-Updates/main/appcast.xml</link>
         <description>Vela for macOS 更新通道</description>
     <item>
+        <title>Version 0.1.0 (44)</title>
+        <description><![CDATA[修复安装数据面时反复报「Bootstrap failed: Input/output error」的问题。
+
+根因是配置文件在上一版被写坏（键放错了位置），系统服务无法解析；
+本次已修正。若上一版安装失败，直接装这版再点一次「安装数据面」即可。
+
+- 修复：安装核心服务报错 Bootstrap failed 5（plist 畸形根因）
+- 此前版本的全部改进同样包含在内]]></description>
+        <pubDate>Wed, 04 Nov 2026 05:09:03 UTC</pubDate>
+        <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+        <sparkle:version>44</sparkle:version>
+        <enclosure url="https://github.com/yeyebang/Vela-Updates/releases/download/v0.1.0-44/Vela-0.1.0-44.dmg" length="43809390" type="application/octet-stream" sparkle:edSignature="QAO/FN9809w634ogaN1od5knjfuwmpOmAEWzVE9wU7MOGwQ9ixOlMg0jp4bY5J0q/syLybzMH3IYEEtU6hsoBQ=="/>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+    </item>
+    <item>
         <title>Version 0.1.0 (43)</title>
         <description><![CDATA[自动更新通道上线，首个公开发布版本。
 
