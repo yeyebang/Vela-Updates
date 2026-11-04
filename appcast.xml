@@ -5,6 +5,20 @@
         <link>https://raw.githubusercontent.com/yeyebang/Vela-Updates/main/appcast.xml</link>
         <description>Vela for macOS 更新通道</description>
     <item>
+        <title>Version 0.1.0 (45)</title>
+        <description><![CDATA[彻底修复「安装数据面」失败（Bootstrap failed / Input/output error）。
+
+本次修掉了最后一条根因：从 DMG 安装的 App，其核心服务二进制会带上
+macOS 的隔离标记，安装到系统后被拒绝启动——现在安装时会自动清除该标记。
+
+提示：如果你之前手动装过开发版，直接装这版再点一次「安装数据面」即可。]]></description>
+        <pubDate>Wed, 04 Nov 2026 05:50:58 UTC</pubDate>
+        <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+        <sparkle:version>45</sparkle:version>
+        <enclosure url="https://github.com/yeyebang/Vela-Updates/releases/download/v0.1.0-45/Vela-0.1.0-45.dmg" length="43809631" type="application/octet-stream" sparkle:edSignature="cfvr6mCJ5fjWex75Ylu3UY3SVbMu4OXzSMX4Ogdb73EAp+U91H3IbeaGmVJ+9T6sCJR11bOszyB9LyiMk+0SBA=="/>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+    </item>
+    <item>
         <title>Version 0.1.0 (44)</title>
         <description><![CDATA[修复安装数据面时反复报「Bootstrap failed: Input/output error」的问题。
 
