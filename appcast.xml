@@ -4,6 +4,26 @@
         <title>Vela</title>
         <link>https://raw.githubusercontent.com/yeyebang/Vela-Updates/main/appcast.xml</link>
         <description>Vela for macOS 更新通道</description>
+    <item>
+        <title>Version 0.1.0 (43)</title>
+        <description><![CDATA[自动更新通道上线，首个公开发布版本。
+
+- App 内置自动更新：之后的新版本会主动提醒并一键升级（Sparkle + EdDSA 签名校验）
+- 修复「启动隧道」按钮点击无反应的问题
+- 修复修改单个 App 出口后可能影响其他 App 配置的问题
+- 修复配置编辑器保存错误内容可能导致服务无法启动的问题（现在会先行校验并拒绝）
+- 修复安装组件时界面长时间无响应的问题
+- 首次安装引导与失败提示全面优化：取消授权不会再被误认为安装成功
+- 修复关机重启后自动接管网络的问题：装完只待命，由你决定何时启动
+- 节点页在没有任何节点时，「添加节点 / 添加订阅」恢复正常
+- 出站 IP 卡片切换出口后即时刷新
+- 大量界面文案去技术化，提示更贴近日常语言]]></description>
+        <pubDate>Wed, 04 Nov 2026 02:44:50 UTC</pubDate>
+        <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+        <sparkle:version>43</sparkle:version>
+        <enclosure url="https://github.com/yeyebang/Vela-Updates/releases/download/v0.1.0-43/Vela-0.1.0-43.dmg" length="43809128" type="application/octet-stream" sparkle:edSignature="JiuDPd0ZtFlZhPnwoTZ5nIzIcKYKFJmP+FxSkCVrAhk2GWvCAqWyfFtYCzwcZ06jpRS7Y9X40gD7p4KPQQmTCw=="/>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+    </item>
         <language>zh-cn</language>
     </channel>
 </rss>
