@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Vela</title>
+        <link>https://raw.githubusercontent.com/yeyebang/Vela-Updates/main/appcast.xml</link>
+        <description>Vela for macOS 更新通道</description>
+        <language>zh-cn</language>
+    </channel>
+</rss>
