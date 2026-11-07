@@ -5,6 +5,15 @@
         <link>https://raw.githubusercontent.com/yeyebang/Vela-Updates/main/appcast.xml</link>
         <description>Vela for macOS 更新通道</description>
     <item>
+        <title>Version 0.1.0 (47)</title>
+        <description><![CDATA[Vela 0.1.0（build 47）发布。]]></description>
+        <pubDate>Sat, 07 Nov 2026 05:12:24 UTC</pubDate>
+        <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+        <sparkle:version>47</sparkle:version>
+        <enclosure url="https://github.com/yeyebang/Vela-Updates/releases/download/v0.1.0-47/Vela-0.1.0-47.dmg" length="43774118" type="application/octet-stream" sparkle:edSignature="YpKGBKFRxV2LowSIj/kqt27frUBYY4TTwuT+1EHTqpzbbeZzMsSc3ZEPQMfJw2w+UDv+VUyT1VFt7jZT5HSDAw=="/>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+    </item>
+    <item>
         <title>Version 0.1.0 (46)</title>
         <description><![CDATA[体验打磨版：按钮热区与安装防护。
 
