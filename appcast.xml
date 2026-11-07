@@ -5,6 +5,21 @@
         <link>https://raw.githubusercontent.com/yeyebang/Vela-Updates/main/appcast.xml</link>
         <description>Vela for macOS 更新通道</description>
     <item>
+        <title>Version 0.1.0 (48)</title>
+        <description><![CDATA[修复「打开隧道后断网、需重启电脑才恢复」的根因。
+
+上一次隧道异常退出（如安装时的强杀）会在系统里留下残留的虚拟网卡与
+路由；下次打开隧道时撞上残留导致流量黑洞。本版起启动隧道前自动检测
+并清理残留（只清理 Vela 自己的痕迹，绝不触碰其他 VPN 或系统路由）。
+
+另外：切换节点失败现在会弹窗告知原因，不再静默失败。]]></description>
+        <pubDate>Sat, 07 Nov 2026 05:26:54 UTC</pubDate>
+        <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+        <sparkle:version>48</sparkle:version>
+        <enclosure url="https://github.com/yeyebang/Vela-Updates/releases/download/v0.1.0-48/Vela-0.1.0-48.dmg" length="43783421" type="application/octet-stream" sparkle:edSignature="r0sjG0CDNV8O46zIXgoQEeGzFkwNjr4O/oBdD3oTFUZx8qIfxnbkTAVp5KjqxZmFGd25fB+UN3lbVc0Y1CvcAg=="/>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+    </item>
+    <item>
         <title>Version 0.1.0 (47)</title>
         <description><![CDATA[Vela 0.1.0（build 47）发布。]]></description>
         <pubDate>Sat, 07 Nov 2026 05:12:24 UTC</pubDate>
