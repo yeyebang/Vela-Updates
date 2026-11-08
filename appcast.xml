@@ -5,6 +5,18 @@
         <link>https://raw.githubusercontent.com/yeyebang/Vela-Updates/main/appcast.xml</link>
         <description>Vela for macOS 更新通道</description>
     <item>
+        <title>Version 0.1.0 (49)</title>
+        <description><![CDATA[修复：更新或重新启动后，节点与订阅页面可能显示为空的问题。
+
+现在任何时候打开 Vela，你配置的节点与订阅都会完整显示，
+不会再出现「节点全没了」的误会（你的配置一直都在）。]]></description>
+        <pubDate>Sun, 08 Nov 2026 01:36:08 UTC</pubDate>
+        <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+        <sparkle:version>49</sparkle:version>
+        <enclosure url="https://github.com/yeyebang/Vela-Updates/releases/download/v0.1.0-49/Vela-0.1.0-49.dmg" length="43786356" type="application/octet-stream" sparkle:edSignature="2wjsCMFTzU5PhszuZ64wB+IcUJisPvqPryGUNQrMEiQUj7ioV8Piia0ppsPOxssG6AIrbGRbghv2qhBk+KXcBA=="/>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+    </item>
+    <item>
         <title>Version 0.1.0 (48)</title>
         <description><![CDATA[修复「打开隧道后断网、需重启电脑才恢复」的根因。
 
