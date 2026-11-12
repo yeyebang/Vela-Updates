@@ -5,6 +5,15 @@
         <link>https://raw.githubusercontent.com/yeyebang/Vela-Updates/main/appcast.xml</link>
         <description>Vela for macOS 更新通道</description>
     <item>
+        <title>Version 0.1.0 (53)</title>
+        <description><![CDATA[规则可用性修复：规则表支持贴完整 URL 搜索、规则页新增“测一下”定位命中规则、策略组显示被 N 条规则引用、活动页多选批量建规则、修应用程序页默认出口串 App 与保存复制规则的问题。]]></description>
+        <pubDate>Wed, 12 Nov 2026 03:20:00 UTC</pubDate>
+        <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+        <sparkle:version>53</sparkle:version>
+        <enclosure url="https://github.com/yeyebang/Vela-Updates/releases/download/v0.1.0-53/Vela-0.1.0-53.dmg" length="43895072" type="application/octet-stream" sparkle:edSignature="54hnlkQD5zTEXgD1RTc+ZbkyZkbcZi+ZZtMO/q9KQYu/Eji5IYtxbkCW2EQdLpSIeUNwk9ImqM9ifqTLaIUoDg=="/>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+    </item>
+    <item>
         <title>Version 0.1.0 (49)</title>
         <description><![CDATA[修复：更新或重新启动后，节点与订阅页面可能显示为空的问题。
 
