@@ -6,49 +6,56 @@
         <description>Vela for macOS 更新通道</description>
     <item>
         <title>Version 0.1.0 (54)</title>
-        <description><![CDATA[build 54 是一次大版本：把「界面骨架像 Surge」推进到「引擎能力真的能用」。
-
-【隧道启动闭环】
-· 路由缩写还原：macOS 把 1.0.0.0/8 显示成裸「1」，旧逻辑认不出它 → 残留路由永远删不掉，隧道一开就撞车。
-· 默认路由按网关精确删除，不再误删本机其它网卡的默认路由。
-· 启动后核实隧道是否真的起来：起不来就如实报错，不再显示「运行中」。
-· 守护进程构建号经 /api/status 透出，App 会提示「后台服务仍是旧版本」。
-
-【协议与节点】
-· 手动添加支持 VLESS（含 Reality / Vision）、Shadowsocks、Hysteria2、TUIC、WireGuard、AnyTLS。
-· 新增从剪贴板导入分享链接（ss / vmess / vless / trojan / hysteria2 / tuic / anytls，支持多行）。
-· 策略组补 load-balance 与 relay。
-
-【接管方式与开关】
-· 概览页新增「全量隧道 / 系统代理」二选一 —— 隧道出问题时至少还有系统代理这条路。
-· 三个开关：IPv6、局域网共享（含端口）、登录时启动主 App。
-· 菜单栏：按策略组选节点、就地测速、系统代理开关。
-
-【规则】
-· 补 9 类规则：通配域名、IPv6 网段、IP-ASN、源 IP、入站端口、协议、User-Agent、子网、目标端口区间。
-· 作用域内支持 AND / OR / NOT 逻辑规则。
-· 规则可拖拽调序；新增临时规则（重启即失效，调试用）。
-
-【DNS】
-· 独立的 DNS 设置页 + 域名查询工具，上游、加密 DNS、fake-ip 过滤、按域名指定解析都能在界面改。
-
-【观测】
-· 活动页补计时分解与策略链，可终止单条连接；详情里给出「为什么不是别的候选」。
-· 新增流量统计：今日 / 本月、按主机、按策略。
-· 日志页：直接读守护进程日志，可过滤、可导出诊断包。
-· 命令行：vela status / mode / select / explain。
-
-【引擎】
-· 常驻脚本宿主：主 App 退出后，已启用的后台脚本仍按预期运行。
-· HTTPS 解密、重写、捕获与重放、端口转发。
-· 模块兼容、代理链、smart 策略组、局域网设备页。
-
-【界面】
-· 统一视觉规范与无障碍标注（图标按钮补 VoiceOver 名字，长文本改中间截断）。
-· 规则表懒加载、搜索自动展开、长列表与刷新频率优化。
-
-注意：本版本首次携带常驻脚本宿主（vela-script-host）。装完后可在「脚本」页确认它是否就绪。
-若启动隧道时提示路由冲突，多半是有别的全量代理（Quantumult X / ClashX / Surge）占着整段 IPv4 —— 先停掉它。]]></description>
+        <description><![CDATA[<p>build 54 是一次大版本：把「界面骨架像 Surge」推进到「引擎能力真的能用」。</p>
+<h3>隧道启动闭环</h3>
+<ul>
+<li>路由缩写还原：macOS 把 1.0.0.0/8 显示成裸「1」，旧逻辑认不出它 → 残留路由永远删不掉，隧道一开就撞车。</li>
+<li>默认路由按网关精确删除，不再误删本机其它网卡的默认路由。</li>
+<li>启动后核实隧道是否真的起来：起不来就如实报错，不再显示「运行中」。</li>
+<li>守护进程构建号经 /api/status 透出，App 会提示「后台服务仍是旧版本」。</li>
+</ul>
+<h3>协议与节点</h3>
+<ul>
+<li>手动添加支持 VLESS（含 Reality / Vision）、Shadowsocks、Hysteria2、TUIC、WireGuard、AnyTLS。</li>
+<li>新增从剪贴板导入分享链接（ss / vmess / vless / trojan / hysteria2 / tuic / anytls，支持多行）。</li>
+<li>策略组补 load-balance 与 relay。</li>
+</ul>
+<h3>接管方式与开关</h3>
+<ul>
+<li>概览页新增「全量隧道 / 系统代理」二选一 —— 隧道出问题时至少还有系统代理这条路。</li>
+<li>三个开关：IPv6、局域网共享（含端口）、登录时启动主 App。</li>
+<li>菜单栏：按策略组选节点、就地测速、系统代理开关。</li>
+</ul>
+<h3>规则</h3>
+<ul>
+<li>补 9 类规则：通配域名、IPv6 网段、IP-ASN、源 IP、入站端口、协议、User-Agent、子网、目标端口区间。</li>
+<li>作用域内支持 AND / OR / NOT 逻辑规则。</li>
+<li>规则可拖拽调序；新增临时规则（重启即失效，调试用）。</li>
+</ul>
+<h3>DNS</h3>
+<ul>
+<li>独立的 DNS 设置页 + 域名查询工具，上游、加密 DNS、fake-ip 过滤、按域名指定解析都能在界面改。</li>
+</ul>
+<h3>观测</h3>
+<ul>
+<li>活动页补计时分解与策略链，可终止单条连接；详情里给出「为什么不是别的候选」。</li>
+<li>新增流量统计：今日 / 本月、按主机、按策略。</li>
+<li>日志页：直接读守护进程日志，可过滤、可导出诊断包。</li>
+<li>命令行：vela status / mode / select / explain。</li>
+</ul>
+<h3>引擎</h3>
+<ul>
+<li>常驻脚本宿主：主 App 退出后，已启用的后台脚本仍按预期运行。</li>
+<li>HTTPS 解密、重写、捕获与重放、端口转发。</li>
+<li>模块兼容、代理链、smart 策略组、局域网设备页。</li>
+</ul>
+<h3>界面</h3>
+<ul>
+<li>统一视觉规范与无障碍标注（图标按钮补 VoiceOver 名字，长文本改中间截断）。</li>
+<li>规则表懒加载、搜索自动展开、长列表与刷新频率优化。</li>
+</ul>
+<p>注意：本版本首次携带常驻脚本宿主（vela-script-host）。装完后可在「脚本」页确认它是否就绪。</p>
+<p>若启动隧道时提示路由冲突，多半是有别的全量代理（Quantumult X / ClashX / Surge）占着整段 IPv4 —— 先停掉它。</p>]]></description>
         <pubDate>Wed, 25 Nov 2026 08:08:10 UTC</pubDate>
         <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
         <sparkle:version>54</sparkle:version>
