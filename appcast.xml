@@ -5,6 +5,19 @@
         <link>https://raw.githubusercontent.com/yeyebang/Vela-Updates/main/appcast.xml</link>
         <description>Vela for macOS 更新通道</description>
     <item>
+        <title>Version 0.1.0 (58)</title>
+        <description><![CDATA[<ul>
+<li>重构顶部菜单栏快捷面板：策略组折叠为原生子菜单，解决菜单过长与排版撕裂问题</li>
+<li>重构规则页面：默认展开 Global 与常用规则分组，默认隐藏 0 条规则的应用占位作用域</li>
+<li>新增规则页「临时规则」快捷入口按钮</li>
+</ul>]]></description>
+        <pubDate>Thu, 26 Nov 2026 09:03:17 UTC</pubDate>
+        <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+        <sparkle:version>58</sparkle:version>
+        <enclosure url="https://github.com/yeyebang/Vela-Updates/releases/download/v0.1.0-58/Vela-0.1.0-58.dmg" length="45713666" type="application/octet-stream" sparkle:edSignature="5V4KhFaMYS6wwBEEOGnmqCAYwo0BmxAMwHV7vCDwpbtkqIgq57ta2jQk7CrsQd5jk/vA4xw/ZWHSCnWZ3VLdDw=="/>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+    </item>
+    <item>
         <title>Version 0.1.0 (56)</title>
         <description><![CDATA[<ul>
 <li>修复 TUN 模式 DNS 劫持缺失与路由上下半段核实问题，提升隧道连通稳定性</li>
