@@ -5,6 +5,23 @@
         <link>https://raw.githubusercontent.com/yeyebang/Vela-Updates/main/appcast.xml</link>
         <description>Vela for macOS 更新通道</description>
     <item>
+        <title>Version 0.1.0 (56)</title>
+        <description><![CDATA[<ul>
+<li>修复 TUN 模式 DNS 劫持缺失与路由上下半段核实问题，提升隧道连通稳定性</li>
+<li>修复后台热应用状态与错误透出、端口转发监听器释放及系统代理状态文案</li>
+<li>支持 no-resolve 规则修饰符、HOSTNAME-TYPE 维度与 SUBNET 策略组</li>
+<li>全局模式支持直接切换 GLOBAL 出口节点；重写规则支持排序</li>
+<li>脚本宿主支持 $httpClient；连接详情支持首字节耗时（TTFB）</li>
+<li>新增独立「观测台」窗口（实时请求过滤、HAR 导出、请求构造器）</li>
+<li>新增网关模式（IP 转发）、Keystore 证书管理与菜单栏实时网速显示</li>
+</ul>]]></description>
+        <pubDate>Thu, 26 Nov 2026 04:03:58 UTC</pubDate>
+        <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+        <sparkle:version>56</sparkle:version>
+        <enclosure url="https://github.com/yeyebang/Vela-Updates/releases/download/v0.1.0-56/Vela-0.1.0-56.dmg" length="45730109" type="application/octet-stream" sparkle:edSignature="HLbAqlr47QhketPTbZZUwTKkOSCj3uPrHbPxCuELk5yFsB3gXP+VDudgyuQrr19pldpFfn1XzBz6yaAMLe0HAg=="/>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+    </item>
+    <item>
         <title>Version 0.1.0 (55)</title>
         <description><![CDATA[<p>build 55 是修两个「说假话」的问题 —— 都是 build 54 实测暴露的。</p>
 <h3>启动隧道不再报「请求超时」</h3>
