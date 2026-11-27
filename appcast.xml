@@ -5,6 +5,20 @@
         <link>https://raw.githubusercontent.com/yeyebang/Vela-Updates/main/appcast.xml</link>
         <description>Vela for macOS 更新通道</description>
     <item>
+        <title>Version 0.1.0 (59)</title>
+        <description><![CDATA[<ul>
+<li>修复新装机无法导入节点订阅的问题（兼容默认 INI 配置平滑升级为原生 YAML，并自动接入 Proxy 策略组）</li>
+<li>新增 Subconverter 订阅链接自动识别与格式转换（`target=surge` / `quanx` / `loon` / `shadowrocket` 等自动转为 `target=clash`，原生解析全部节点）</li>
+<li>添加订阅改为后台异步热应用，避免冷拉取订阅超时，并支持从 URL 自动填充订阅名</li>
+<li>包含此前完成的 Surge 对齐能力（Wi-Fi SSID 感知 SUBNET 策略组、多配置文件管理、双栏独立仪表盘、自定义 Panel 面板、真实流量排行）与 UI 优化</li>
+</ul>]]></description>
+        <pubDate>Fri, 27 Nov 2026 03:45:31 UTC</pubDate>
+        <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+        <sparkle:version>59</sparkle:version>
+        <enclosure url="https://github.com/yeyebang/Vela-Updates/releases/download/v0.1.0-59/Vela-0.1.0-59.dmg" length="45978411" type="application/octet-stream" sparkle:edSignature="M499h9e0+Qj2Q8wbVeMjkM9ZQiZqfxoeU08mUq5BTATdLdSLpadUhEODDEv573W38i67/8RCfz0pZ4Xx1B5iDQ=="/>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+    </item>
+    <item>
         <title>Version 0.1.0 (58)</title>
         <description><![CDATA[<ul>
 <li>重构顶部菜单栏快捷面板：策略组折叠为原生子菜单，解决菜单过长与排版撕裂问题</li>
