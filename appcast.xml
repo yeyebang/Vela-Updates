@@ -5,6 +5,20 @@
         <link>https://raw.githubusercontent.com/yeyebang/Vela-Updates/main/appcast.xml</link>
         <description>Vela for macOS 更新通道</description>
     <item>
+        <title>Version 0.1.0 (60)</title>
+        <description><![CDATA[<ul>
+<li>修复待命态（隧道未启动）下添加订阅/节点时后台热应用擅自拉起 root TUN 抢占系统路由导致断网的 P0 Bug</li>
+<li>重构订阅导入链路：在控制面直连预拉取、格式校验与本地落盘缓存（支持 Clash YAML / Base64 节点串 / 原生 Surge `[Proxy]` 自动转换，以及第三方 Subconverter 超时自动回退上游原始机场地址）</li>
+<li>待命态添加订阅后即刻在「节点」页展示全部订阅节点（无需先启动隧道），并自动过滤「剩余流量/到期时间」说明假节点预选首个真实节点；遇到 403 反代理拦截时直接在弹窗内给出中文排障提示</li>
+<li>启动隧道时直接毫秒级加载本地订阅缓存，杜绝 mihomo `OnInnerLoading` 阶段阻塞全机网络；默认配置补齐局域网与 `.cn` 直连保护规则</li>
+</ul>]]></description>
+        <pubDate>Fri, 27 Nov 2026 05:21:45 UTC</pubDate>
+        <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+        <sparkle:version>60</sparkle:version>
+        <enclosure url="https://github.com/yeyebang/Vela-Updates/releases/download/v0.1.0-60/Vela-0.1.0-60.dmg" length="46013991" type="application/octet-stream" sparkle:edSignature="JlDyzKZwjRwM1G+GdFpxPTKfOb4T8fFVRIervGFz6deauQyezLfJcjU0sg2lYQjbV1rMq347/YexnDB2VBrYBg=="/>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+    </item>
+    <item>
         <title>Version 0.1.0 (59)</title>
         <description><![CDATA[<ul>
 <li>修复新装机无法导入节点订阅的问题（兼容默认 INI 配置平滑升级为原生 YAML，并自动接入 Proxy 策略组）</li>
