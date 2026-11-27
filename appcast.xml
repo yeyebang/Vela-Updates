@@ -5,6 +5,18 @@
         <link>https://raw.githubusercontent.com/yeyebang/Vela-Updates/main/appcast.xml</link>
         <description>Vela for macOS 更新通道</description>
     <item>
+        <title>Version 0.1.0 (61)</title>
+        <description><![CDATA[<ul>
+<li>修复「订阅节点」列表混入策略组（`AdobeAI`/`ChatGPT`/`Claude` 等 0 节点条目）的问题：过滤 mihomo 内部 `compatible` 策略组包装器，只显示真实节点订阅</li>
+<li>修复打开隧道后流量无法进代理、Google 无法打开的 P0 Bug：当系统残留不可销毁的僵尸 `utun`（如 `utun4` 占住 `198.18.0.1`）时，自动避让选用同网段空闲的唯一 `/30` 地址（如 `198.18.1.1/30`），防止 macOS 内核把路由绑到僵尸接口造成流量黑洞</li>
+</ul>]]></description>
+        <pubDate>Fri, 27 Nov 2026 06:46:17 UTC</pubDate>
+        <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+        <sparkle:version>61</sparkle:version>
+        <enclosure url="https://github.com/yeyebang/Vela-Updates/releases/download/v0.1.0-61/Vela-0.1.0-61.dmg" length="46017407" type="application/octet-stream" sparkle:edSignature="moqdtxPUtKAhExkFRvQv6Mq27Ax46Iz8az2CFa1AIp3nR/y8pM/SMteG+8WNvB59pL65Vh9pszs1XgPq0bV7CA=="/>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+    </item>
+    <item>
         <title>Version 0.1.0 (60)</title>
         <description><![CDATA[<ul>
 <li>修复待命态（隧道未启动）下添加订阅/节点时后台热应用擅自拉起 root TUN 抢占系统路由导致断网的 P0 Bug</li>
